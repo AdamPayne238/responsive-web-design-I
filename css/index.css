@@ -97,8 +97,9 @@ h1, h2, h3, h4, h5 {
 
 }
 
-.innovation-and-button .img{
-    display: none;
+.innovation-and-button img{
+    display: flex;
+    
 }
 
 .text-under-img{
@@ -233,17 +234,52 @@ img.middle-img{
 
 @media screen and (max-width: 800px){
     .all-content{
-        width: 550px;
+        width: 100%;
     }
     
     header{
-        width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
+    .logo-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .header-img{
+        display: none;
+    }
+
+    .img-button{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
     
+
+    .logo{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+.innovation-and-button{
+    display: flex;
+    justify-content: center;
+}
+
     .innovation-and-button img{
         max-width: 60%;
+        justify-content: center;
     }
     
     .innovation-and-button h1{
@@ -251,15 +287,14 @@ img.middle-img{
         flex-direction: center;
     }
     
-    
     .top-two{
         display: flex;
-        justify-content: space-evenly;
-        
     }
-    
+
+
+
     img.middle-img{
-        max-width: 550px;
+        width: 100%;
     }
   }
 
@@ -267,18 +302,42 @@ img.middle-img{
 
 @media screen and (max-width: 500px){
     .all-content{
-        width: 320px;
+        display: flex;
+        flex-direction: column;
     }
     
-    header{
-        width: 320px;
+    .logo{
+        width: 60%;
     }
 
+    header{
 
+        flex-direction: column-reverse;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
     
     nav a{
-        display: none;
+        display: flex;
+        justify-content: space-between;
     }
+
+    .top-two{
+        flex-direction: column;
+    }
+    
+    .bottom-three{
+        flex-direction: column;
+    }
+
 
     .innovation-and-button img{
         max-width: 60%;
@@ -286,17 +345,8 @@ img.middle-img{
     
     .innovation-and-button h1{
         font-size: 45px;
-        flex-direction: center;
     }
-    
-    
-    .top-two{
-        display: flex;
-        justify-content: space-evenly;
-        
-    }
-    
+
     img.middle-img{
-        max-width: 320px;
     }
   }
