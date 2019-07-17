@@ -331,11 +331,18 @@ img.middle-img{
     }
 
     .top-two{
+        justify-content: space-around;
         flex-direction: column;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
     
+
     .bottom-three{
+        justify-content: space-around;
         flex-direction: column;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
 
@@ -349,4 +356,14 @@ img.middle-img{
 
     img.middle-img{
     }
+  }
+
+  .contact{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .copyright{
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
